@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(NaverOauth02Application.class);
+		return application.sources(SpringBoot1Application.class);
 	}
 
 }
