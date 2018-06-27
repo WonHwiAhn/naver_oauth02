@@ -3,6 +3,13 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
+  
+  datasource: 
+    url: jdbc:mysql://localhost:3306/test?useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: manager    
+  
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
@@ -10,12 +17,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create
-
-  datasource: 
-    url: jdbc:mysql://localhost:3306/test?useSSL=false
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: manager
 
 naver:
   client:
